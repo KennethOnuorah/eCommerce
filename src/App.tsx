@@ -1,12 +1,9 @@
-import Button from '@mui/material/Button/Button'
-import './App.css'
+import Navbar from "./components/Navbar"
 
 function App() {
   return (
-    <div className='app'>
-      <Button variant='contained'>
-        HELLO WORLD
-      </Button>
+    <div>
+      <Navbar/>
     </div>
   )
 }
