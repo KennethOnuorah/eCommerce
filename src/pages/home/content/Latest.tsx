@@ -16,28 +16,28 @@ const Latest = () => {
           title="Seamless Delight High Neck Bra"
           price={74.99}
           isTrending={true}
-          image={'/images/new arrivals/seamless_delight_high_neck_bra_na.png'}
+          image={'https://cdn.shopify.com/s/files/1/2185/2813/products/W9536R_04681_b2_s1_a1_m140_750x.jpg?v=1676675720'}
           tags={["Women", "Tops", "Casual"]}
         />
         <Product
           title="Triumph Muscle Tank"
           price={59.99}
           isTrending={false}
-          image={'/images/new arrivals/triumph_muscle_tank_na.png'}
+          image={'https://cdn.shopify.com/s/files/1/2185/2813/products/M2033R_01347_b1_s3_a1_1_m93_750x.jpg?v=1665013610'}
           tags={["Men", "Tops", "Fitness"]}
         />
         <Product
           title="Alosoft Courtside Tennis Dress"
           price={64.99}
           isTrending={false}
-          image={'/images/new arrivals/tennis_dress_na.png'}
+          image={'https://cdn.shopify.com/s/files/1/2185/2813/products/W8176R_01_b1_s1_a1_1_m54_750x.jpg?v=1687906487'}
           tags={["Women", "Tops", "Fitness"]}
         />
         <Product
           title="Accolade Hoodie"
           price={69.99}
           isTrending={true}
-          image={'/images/new arrivals/accolade_hoodie_na.png'}
+          image={'https://cdn.shopify.com/s/files/1/2185/2813/files/U3032RG_00_b1_s3_a1_1_m108_750x.jpg?v=1686095297'}
           tags={["Men", "Tops", "Casual"]}
         />
       </div>

@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
-const Hero = () => {
+const CurrentEvents = () => {
   const [bottomMargin,] = useState(64)
 
   return (
     <section 
-      className=' hero rounded-3xl mt-20 min-h-screen overflow-hidden' 
+      className=' hero mt-20 min-h-screen overflow-hidden' 
       style={{
         backgroundImage: 'linear-gradient(to right, #f3deba, #ecd1f7)',
         minHeight: `calc(100vh - 80px - ${bottomMargin}px)`,
@@ -27,11 +27,15 @@ const Hero = () => {
           </button>
         </div>
         <figure>
-          <img src="/images/coat_model.png" alt="Woman with brown fur coat" width={450}/>
+          <img 
+            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Flarge%2Fpurepng.com-faux-fur-coatfurry-animal-hidesclothingwarmcoatfauxfur-coatbrownwomens-1421526317459tlk8i.png&f=1&nofb=1&ipt=080d36a2b4244ed524af070bb13969619795bd090da5c106d831eeb3a8b9734b&ipo=images" 
+            alt="Brunette woman wearing brown fur coat"
+            width={450}
+          />
         </figure>
       </div>
     </section>
   )
 }
 
-export default Hero
+export default CurrentEvents

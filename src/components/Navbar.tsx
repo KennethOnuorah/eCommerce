@@ -1,13 +1,10 @@
 import { useState } from 'react'
-import { 
-  FiUser as LogInIcon ,
-  FiShoppingCart as CartIcon
-} from 'react-icons/fi'
+import { FiUser as LogInIcon, FiShoppingCart as CartIcon } from 'react-icons/fi'
 import { IoGiftOutline as GiftIcon } from 'react-icons/io5'
 import { CiSearch as SearchIcon } from 'react-icons/ci'
 
 const Navbar = () => {
-  const [hasNewlyAddedItems,] = useState(true)
+  const [hasNewlyAddedItems,] = useState(false)
   const [totalNewlyAddedItems,] = useState(3)
 
   return (
@@ -36,7 +33,7 @@ const Navbar = () => {
               {totalNewlyAddedItems}
             </span>
           }
-          <button className='px-0 py-0 bg-transparent border-none' title='Go to cart'>
+          <button className='px-0 bg-transparent border-none' title='Go to cart'>
             <CartIcon size={20} color={'#a0a0a0'}/>
           </button>
         </div>
