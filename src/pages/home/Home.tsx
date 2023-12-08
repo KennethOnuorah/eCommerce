@@ -8,7 +8,7 @@ import Accessories from "./content/Accessories"
 
 const Home = () => {
   return (
-    <main>
+    <section>
       <CurrentEvents/>
       <Latest/>
       <OnSale/>
@@ -16,7 +16,7 @@ const Home = () => {
       <Men/>
       <Women/>
       <Accessories/>
-    </main>
+    </section>
   )
 }
 

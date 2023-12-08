@@ -1,4 +1,3 @@
-import { ChangeEvent, useState } from 'react'
 import { FiChevronRight as EnterIcon } from 'react-icons/fi'
 import { 
   BiLogoInstagram as Insta,
@@ -114,7 +113,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className=' text-white font-semibold flex gap-4'>
+        <div className=' text-white flex gap-4'>
           © 2023 Nexus, LLC. All Rights Reserved.
           <span className=' font-light'>
             <ul>

@@ -1,15 +1,17 @@
 import { useState } from 'react'
-import { FiUser as LogInIcon, FiShoppingCart as CartIcon } from 'react-icons/fi'
-import { IoGiftOutline as GiftIcon } from 'react-icons/io5'
+import { 
+  PiUserLight as LogInIcon, 
+  PiShoppingCartSimpleLight as CartIcon, 
+  PiGiftLight as GiftIcon 
+} from 'react-icons/pi'
 import { CiSearch as SearchIcon } from 'react-icons/ci'
 
 const Navbar = () => {
-  const [hasNewlyAddedItems,] = useState(false)
-  const [totalNewlyAddedItems,] = useState(3)
+  const [itemCountUpdated,] = useState(true)
 
   return (
-    <nav className="navbar fixed top-0 left-0 px-6 py-4 bg-white flex justify-evenly items-center text-gray-400 z-50">
-      <a href="#" className="normal-case text-3xl font-light">Nexus</a>
+    <nav className="navbar fixed top-0 left-0 px-6 py-4 bg-white flex justify-evenly items-baseline text-black z-50">
+      <a href="#" className="normal-case text-4xl font-light">Nexus</a>
       <div className="flex text-xl gap-8">
         <a href="#" className="font-thin">New</a>
         <a href="#" className="font-thin">Men</a>
@@ -17,7 +19,7 @@ const Navbar = () => {
         <a href="#" className="font-thin">Accessories</a>
         <label className="flex items-center font-thin">
           <div className='btn bg-transparent border-transparent hover:bg-transparent hover:border-transparent'>
-            <SearchIcon size={20} color={'#a0a0a0'}/>
+            <SearchIcon size={20} color={'black'}/>
           </div>
           <input 
             type="search" 
@@ -28,20 +30,17 @@ const Navbar = () => {
       </div>
       <div className='flex gap-8'>
         <div className="indicator">
-          {hasNewlyAddedItems && 
-            <span className=' indicator-item badge bg-red-600 px-1 text-white text-xs select-none'>
-              {totalNewlyAddedItems}
-            </span>
-          }
           <button className='px-0 bg-transparent border-none' title='Go to cart'>
-            <CartIcon size={20} color={'#a0a0a0'}/>
+            {itemCountUpdated && 
+              <div className=' absolute right-0 bg-red-600 border-white border-2 rounded-full h-2.5 w-2.5 translate-x-0.5'/>}
+            <CartIcon size={20} color={'black'}/>
           </button>
         </div>
         <button title='View rewards'>
-          <GiftIcon size={22} color={'#a0a0a0'}/>
+          <GiftIcon size={22} color={'black'}/>
         </button>
         <button title='Log in/Sign up'>
-          <LogInIcon size={20} color={'#a0a0a0'}/>
+          <LogInIcon size={20} color={'black'}/>
         </button>
       </div>
     </nav>
